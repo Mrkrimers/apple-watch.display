@@ -13,7 +13,7 @@ class AppleWatch {
         const minutes = now.getMinutes();
         const second = now.getSeconds();
 
-        div.innerHTML = `${hour}:${minutes}:${second}`
+        div.innerHTML = now.toLocaleTimeString(`ru-BY`)
         document.querySelector(`.my_year`).innerHTML = now.getFullYear()
     }
 }
