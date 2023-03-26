@@ -23,25 +23,50 @@ body {
 }
 
 
+.wrapper .data {
+    font-family: 'K2D';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    color: #FFFFFF;
+    margin: 30px;
+    padding-left: 400px;
+}
+
+
 .wrapper .img {
     background-image: url(./assets/Mask\ group.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 470px;
     height: 470px;
-    margin: 100px auto 0; // DELETE margin TOP 
+    margin: auto; // DELETE margin TOP 
 }
 
-.wrapper h1 {
-    width: 102px;
-    height: 26px;
-    font-family: 'K2D';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #FFFFFF;
-    margin: 16px auto;
+
+.wrapper {
+    .year {
+        display: flex;
+        justify-content: center;
+
+        h1 {
+
+            height: 26px;
+            font-family: 'K2D';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+            margin: 16px 0;
+        }
+
+    }
+
 }
+
+
+
 
 .wrapper .line {
     width: 230px;

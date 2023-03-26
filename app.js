@@ -1,44 +1,24 @@
-// const arr = ['If you fall asleep now, you will dream. If you study now, you will live your dream.',
-//     'When you think it’s too late, the truth is, it’s still early.',
-//     'The pain of studying is only temporary. But the pain of not knowing — ignorance — is forever.',
-//     'Studying is not about time. It’s about effort.',
-//     'Life is not all about studying. But if you can’t even conquer this little part of life, then what else can youpossibly do ?',
-//     'Success only comes with self-management and determination.',
-//     'If you don’t walk today, you’ll have to run tomorrow.',
-//     'The level of education is in direct correlation with your salary.',
-//     'When today is over, it will never come back.',
-//     'Even now, your enemies are eagerly flipping through books.'
-// ];
 
+class AppleWatch {
 
-// const dynamicText = document.querySelector(`.wrapper p`);
+    constructor() {
+        setInterval(this.doDynamic, 1000)
+    }
 
-// function doDynamic(arr_, dynamicText_) {
-//     const index = Math.round(Math.random() * arr_.length - 1)
+    doDynamic() {
+        const div = document.querySelector(`.data`)
 
-//     dynamicText_.innerHTML = arr_[index]
-// }
+        const now = new Date();
+        const hour = now.getHours();
+        const minutes = now.getMinutes();
+        const second = now.getSeconds();
 
-
-// setInterval(doDynamic, 3000, arr, dynamicText)
-
-
-
-
-const now = new Date();
-console.log(now);
-console.log(now[0]);
-console.log(typeof now);
-
-
-for (let key in now) {
-    console.log(key);
-    console.log(now[key]);
+        div.innerHTML = `${hour}:${minutes}:${second}`
+        document.querySelector(`.my_year`).innerHTML = now.getFullYear()
+    }
 }
 
 
-// function currentTime() {
-//     var t = setTimeout(function () { currentTime() }, 1000); /* настаиваем таймер */
-// }
-
-// currentTime(); /* Вызываем функция currentTime(), которая запускает весь процесс*/
+const appleWatch = new AppleWatch();
+appleWatch.doDynamic()
+// console.log(appleWatch.doDynamic());

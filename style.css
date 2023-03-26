@@ -22,24 +22,42 @@ body {
   margin: 100px auto;
 }
 
+.wrapper .data {
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFFFFF;
+  margin: 30px;
+  padding-left: 400px;
+}
+
 .wrapper .img {
   background-image: url(./assets/Mask\ group.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 470px;
   height: 470px;
-  margin: 100px auto 0;
+  margin: auto;
 }
 
-.wrapper h1 {
-  width: 102px;
+.wrapper .year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .year h1 {
   height: 26px;
   font-family: "K2D";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   color: #FFFFFF;
-  margin: 16px auto;
+  margin: 16px 0;
 }
 
 .wrapper .line {
